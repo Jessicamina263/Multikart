@@ -1,0 +1,367 @@
+.product-card 
+{
+    position: relative;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.190);
+    margin: 0;
+    padding: 0;
+    width: 225px;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.product-card img 
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.product-card:hover 
+{
+    transform: scale(1.02);
+}
+.product-button 
+{
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #3e5168;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-button:hover 
+{
+    filter: brightness(0.9);
+}
+.product-card:hover .product-button 
+{
+    opacity: 1;
+}
+.product-icons 
+{
+    position: absolute;
+    right: 5%;
+    top: 11%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-card:hover .product-icons 
+{
+    opacity: 1;
+}
+.product-icon 
+{
+    fill: white;
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+}
+.product-icon:hover 
+{
+    filter: brightness(0.10);
+}
+.dropdowncontent 
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 200; 
+}
+.dropdowncontent a 
+{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdowncontent a:hover 
+{
+    background-color: white;
+}
+.dropdown:hover .dropdowncontent 
+{
+    display: block;
+}
+.back 
+{
+    background-image: url('../components/images/banner.jpg');
+    width: 100%;
+    height:76vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.back div
+{
+    position: relative;
+    top: 45%;
+    right: -24%;
+}
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+.dropdown-content a 
+{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover 
+{
+    background-color: white;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.stylingselect
+{
+    margin-top: 10;
+    outline: none;
+}
+.line1
+{
+    width: 1000px;
+    height: 1px;
+}
+.line2
+{
+    width: 1px;
+    height: 80px;
+}
+.cardhover 
+{
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.cardhover img 
+{
+    transition: transform 0.3s ease;
+}
+.cardhover:hover img 
+{
+    transform: scale(1.1);
+}
+.cardhoverh3 h3
+{
+    transition: color 0.3s ease;
+    color: black;
+    font-weight: 500;
+}
+.cardhover:hover .cardhoverh3 h3 
+{
+    color: #3e5168;
+}
+.imagecontainer 
+{
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+}
+.imagecontainer img 
+{
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+.imagecontainer:hover img 
+{
+    opacity: 0.5;
+}
+
+.imagecontainer:hover 
+{
+    background-color: #3e5168;
+    filter: brightness(0.8);
+}
+.imagecontainer .icon 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: transform 0.9s ease, width 0.9s ease, height 0.9s ease;
+    width: 150px;
+    height: 150px;
+    fill: transparent;
+}
+.imagecontainer:hover .icon 
+{
+    transform: translate(-50%, -50%) rotate(0deg);
+    fill: rgba(255, 255, 255, 0.644);
+    width: 60px;
+    height: 60px;
+}
+.subbutton
+{
+    color: white; 
+    background-color: #3e5168;
+    width: 150px;
+    height: 50px;
+    border-radius: 5%;
+}
+.emailin 
+{
+    border: 1px solid;
+    border-radius: 5px; 
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+.iconfooter:hover
+{
+    fill: #3e5168;
+}
+.filtersort
+{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px; ;
+    color: black;
+    background-color: #f5f5f4;
+    align-items: center;
+    justify-content: center;
+}
+.filtersort:hover
+{
+    background-color: #ddddda;
+}
+.remoicon
+{
+    width: 18px;
+}
+.remoicon :hover
+{
+    fill: red;
+}
+.sort-bar, .filters-bar 
+{
+    position: fixed;
+    right: -500px;
+    top: 0;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1500;
+}
+.sort-bar.open, .filters-bar.open 
+{
+    right: 0;
+}
+.sort-bar h2, .filters-bar h2 
+{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.sort-bar ul, .filters-bar ul 
+{
+    list-style: none;
+    padding: 0;
+}
+.sort-bar ul li, .filters-bar ul li 
+{
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.sort-options 
+{
+    display: flex;
+    flex-direction: column;
+}  
+  .sort-option 
+{
+    margin-bottom: 10px;
+    position: relative;
+}  
+  .sort-btn 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.chevron-icon 
+{
+    width: 13px;
+    height: 13px;
+}
+.dropdownsort 
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+.dropdownsort li 
+{
+    padding: 8px;
+    cursor: pointer;
+}
+  .dropdownsort li:hover 
+{
+    background-color: #f0f0f0;
+}
+hr 
+{
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+.overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.close-btn 
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.close-btn :hover
+{
+    fill: red;
+}
